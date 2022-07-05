@@ -1,9 +1,10 @@
 import "../App.css";
+import "./Home.css";
 
-const Home = () => {
+const Home = ({myRef}) => {
     return (
         <div className="Home">
-                <div className="text">
+                <div className="text" ref={myRef}>
                     <h5>Te doy la bienvenida a mi web</h5>
                     <h1>Hola, soy Alice</h1>
                     <h2>Diseñadora Gráfica y UX/UI</h2>
@@ -13,7 +14,6 @@ const Home = () => {
                         <button>Mis trabajos</button>
                     </div>
                 </div>
-            
         </div>
     )
 }

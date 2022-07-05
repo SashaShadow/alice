@@ -1,0 +1,13 @@
+.Footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "on tw th";
+    width: 100vw;
+    height: 5rem;
+    background-color: #E5EBF9;
+}
+
+.Volver {
+    grid-area: tw;
+    justify-self:center;
+}
