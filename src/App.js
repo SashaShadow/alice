@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <NavBar scroll={scrollToElement} ref1={testRef} ref2={testRef2}/>
-      <Home myRef={testRef}/>
+      <Home scroll={scrollToElement} myRef={testRef} ref2={testRef2}/>
       <BlankPage/>
       <Contact myRef={testRef2}/>
       <Footer scroll={scrollToElement} ref1={testRef}/>

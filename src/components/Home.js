@@ -1,7 +1,7 @@
 import "../App.css";
 import "./Home.css";
 
-const Home = ({myRef}) => {
+const Home = ({myRef, ref2, scroll}) => {
     return (
         <div className="Home">
                 <div className="text" ref={myRef}>
@@ -10,7 +10,7 @@ const Home = ({myRef}) => {
                     <h2>Diseñadora Gráfica y UX/UI</h2>
                     <h4>Soy diseñadora y me especializo en temas como packaging, retoques digitales y logotipos</h4>
                     <div className="Buttons">
-                        <button>Conversemos</button>
+                        <button onClick={() => scroll(ref2)}>Conversemos</button>
                         <button>Mis trabajos</button>
                     </div>
                 </div>

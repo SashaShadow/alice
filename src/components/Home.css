@@ -1,7 +1,7 @@
 .text {
     animation-name: aparecer;
     animation-duration: 1.5s;
-    scroll-margin-top: 15vh;
+    scroll-margin-top: 23vh;
 }
 
 @keyframes aparecer {

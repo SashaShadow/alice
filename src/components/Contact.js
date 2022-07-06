@@ -1,6 +1,7 @@
 import "./Contact.css";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import {BsLinkedin, BsInstagram, BsFacebook, BsWhatsapp} from 'react-icons/bs';
 
 const Contact = ({myRef}) => {
 
@@ -29,6 +30,11 @@ const Contact = ({myRef}) => {
             <div  ref={myRef} className="ContactText">
                 <h1>Conversemos</h1>
                 <h4>Mándame un mensaje mediante el formulario y me contactaré contigo a la brevedad</h4>
+                <p>© Copyright Alice Michan 2022.</p>
+                <p>Ilustraciones:</p>
+                <p>Diseño web:</p>
+                <p>Programación:</p>
+                <div className="Icons"><BsLinkedin/> <BsFacebook/> <BsInstagram/> <BsWhatsapp/></div>
             </div>
             <div className="ContactMe">
             <form className="ContactForm" ref={form} onSubmit={sendEmail}>
