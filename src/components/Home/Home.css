@@ -1,0 +1,88 @@
+.HomeContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.Home{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.text h5{
+    font-size: 1.25rem;
+    font-family: var(--tipo-texto);
+    color: #0A66C2 ;
+    margin-bottom: 2rem ;
+}
+
+.text h1{
+    font-size: 3.75rem;
+    font-family: var(--tipo-titulo1);
+    font-weight: 800;
+    color: #0A66C2;
+    margin-bottom: 3rem;
+}
+
+.text h2{
+    font-size: 3.125rem;
+    font-family: var(--tipo-titulo1);
+    font-weight: 700;
+    color: #0A66C2;
+    margin-bottom: 2rem;
+}
+
+.text h4{
+    font-family: var(--tipo-texto);
+    color: #0A66C2;
+    font-size: 1.563rem;
+    max-width: 42rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.alice{
+    width: 36rem;
+}
+
+.Buttons{
+    display: flex;
+}
+
+.Buttons button{
+    background-color: #0A66C2;
+    font-family: var(--tipo-texto);
+    font-weight: 500;
+    margin-right: 3rem;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: 3px solid #0E355B;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.text {
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    scroll-margin-top: 23vh;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

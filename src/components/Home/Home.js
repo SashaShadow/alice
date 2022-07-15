@@ -1,9 +1,9 @@
-import "../App.css";
 import "./Home.css";
 
 const Home = ({myRef, ref2, scroll}) => {
     return (
-        <div className="Home">
+        <div className="HomeContainer">
+            <div className="Home">
                 <div className="text" ref={myRef}>
                     <h5>Te doy la bienvenida a mi web</h5>
                     <h1>Hola, soy Alice</h1>
@@ -14,6 +14,9 @@ const Home = ({myRef, ref2, scroll}) => {
                         <button>Mis trabajos</button>
                     </div>
                 </div>
+                <img src="https://res.cloudinary.com/telayna-i/image/upload/v1657906177/Alice/bro_swrxi4.svg" className="alice"/>
+            </div>
+            <div className="Section">SobreMi</div>
         </div>
     )
 }

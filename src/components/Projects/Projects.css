@@ -1,0 +1,92 @@
+.Projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.Packaging{
+    display: flex;
+    position: relative;
+    top: -3rem;
+    margin-bottom: 3rem;
+}
+
+.RetoqueDigital{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 5rem;
+}
+
+.RetoqueDigital .TextProject{
+    margin-left: 4rem;
+}
+
+.Marcas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #5E96CD;
+}
+
+.Marcas img{
+    width: 57.5rem;
+    margin: 10rem;
+}
+
+.Logos-Banners{
+    display: flex;
+    position: relative;
+    top: -3rem;
+    margin-bottom: 3rem;
+}
+
+.Ux-Ui{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 3rem;
+}
+
+.Ux-Ui .TextProject{
+    margin-left: 4rem;
+}
+
+.TextProject{
+    justify-self: center;
+    align-self: flex-end ;
+}
+
+.ProjectImg{
+    width: 50%;
+    margin-right: 3rem ;
+    margin-left: 5rem;
+}
+
+.TextProject h4{
+    font-size: 3.125rem;
+    font-weight: 500;
+    color: #0A66C2;
+    font-family: var(--tipo-titulo2);
+    margin-bottom: 2rem;
+}
+
+.TextProject p{
+    font-family: var(--tipo-texto);
+    font-weight: 400;
+    color: #2A71B8;
+    font-size: 1.4rem;
+    width: 80%;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.TextProject button{
+    font-size: 1.875rem;
+    font-family: var(--tipo-titulo2);
+    color: #0A66C2;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Arrow{
+    position: relative;
+    top: 6px;
+}

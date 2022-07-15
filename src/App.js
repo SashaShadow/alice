@@ -1,10 +1,11 @@
 import './App.css';
-import Home from "./components/Home.js";
-import NavBar from "./components/NavBar.js";
-import BlankPage from "./components/BlankPage.js";
-import Contact from "./components/Contact.js";
-import Footer from "./components/Footer.js";
+import Home from "./components/Home/Home"
+import NavBar from "./components/NavBar/NavBar.js";
+import Contact from "./components/Contact/Contact.js";
+import Footer from "./components/Footer/Footer.js";
 import {useRef} from "react";
+import AboutMe from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
     <div className="App">
       <NavBar scroll={scrollToElement} ref1={testRef} ref2={testRef2}/>
       <Home scroll={scrollToElement} myRef={testRef} ref2={testRef2}/>
-      <BlankPage/>
+      <AboutMe/>
+      <Projects/>
       <Contact myRef={testRef2}/>
       <Footer scroll={scrollToElement} ref1={testRef}/>
     </div>
