@@ -2,9 +2,9 @@ import React from 'react'
 import './Projects.css'
 import { BsArrowRight } from 'react-icons/bs'
 
-const Projects = () => {
+const Projects = ({ref3}) => {
     return (
-        <div className='Projects'>
+        <div className='Projects' ref={ref3}>
             <div className='Packaging'>
                 <img className='ProjectImg' src='https://res.cloudinary.com/telayna-i/image/upload/v1657911366/Alice/image_67_l3dqpp.png'/>
                 <div className='TextProject'>

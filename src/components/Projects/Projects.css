@@ -1,6 +1,7 @@
 .Projects{
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 9.5vh;
 }
 
 .Packaging{

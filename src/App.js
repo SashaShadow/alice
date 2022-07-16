@@ -11,6 +11,7 @@ function App() {
 
   const testRef = useRef(null);
   const testRef2 = useRef(null);
+  const testRef3 = useRef(null);
 
   const scrollToElement = (someRef) => someRef.current.scrollIntoView({ 
     behavior: 'smooth' 
@@ -18,10 +19,10 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar scroll={scrollToElement} ref1={testRef} ref2={testRef2}/>
-      <Home scroll={scrollToElement} myRef={testRef} ref2={testRef2}/>
+      <NavBar scroll={scrollToElement} ref1={testRef} ref2={testRef2} ref3={testRef3}/>
+      <Home scroll={scrollToElement} myRef={testRef} ref2={testRef2} ref3={testRef3}/>
       <AboutMe/>
-      <Projects/>
+      <Projects ref3={testRef3}/>
       <Contact myRef={testRef2}/>
       <Footer scroll={scrollToElement} ref1={testRef}/>
     </div>
