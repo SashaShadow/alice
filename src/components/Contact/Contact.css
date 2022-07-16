@@ -33,6 +33,7 @@
     flex-direction: column;
     width: 26rem;
     margin: auto;
+    scroll-margin-top: 6rem;
 }
 
 
@@ -72,7 +73,11 @@
     font-family: var(--tipo-titulo3);
     color: #ffffff;
     text-transform: uppercase;
+}
 
+textarea {
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
 }
 
 /* .Contact {

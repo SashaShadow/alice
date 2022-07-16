@@ -1,7 +1,7 @@
 .Projects{
     display: flex;
     flex-direction: column;
-    scroll-margin-top: 9.5vh;
+    scroll-margin-top: 6rem;
 }
 
 .Packaging{
@@ -62,7 +62,7 @@
 }
 
 .TextProject h4{
-    font-size: 3.125rem;
+    font-size: 2.9rem;
     font-weight: 500;
     color: #0A66C2;
     font-family: var(--tipo-titulo2);
@@ -73,7 +73,7 @@
     font-family: var(--tipo-texto);
     font-weight: 400;
     color: #2A71B8;
-    font-size: 1.4rem;
+    font-size: 1.563rem;
     width: 80%;
     line-height: 1.7rem;
     margin-bottom: 1rem;

@@ -25,13 +25,21 @@ const Contact = ({myRef}) => {
         });
     };
 
+    const whatsappLink = () => {
+        window.open('https://api.whatsapp.com/send?phone=++525536777280&text=%C2%A1Hola%20Alice,%20me%20interesa%20contratar%20tu%20trabajo!', '_blank')
+    }
+
     return (
         <div className="Contact">
-            <div  ref={myRef} className="ContactText">
+            <div className="ContactText">
                 <h2>Conversemos</h2>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, lectus augue lorem turpis. Commodo diam netus integer sed. Ut varius natoque scelerisque lectus amet platea ultricies. Mollis varius sed arcu commodo vitae et, leo.</h4>
+                <div className="IconsFooter">
+                <BsLinkedin className="Icon"/> <BsFacebook className="Icon"/> <BsInstagram className="Icon"/> 
+                <BsWhatsapp onClick={whatsappLink} className="Icon"/>
+                </div>
             </div>
-            <div className="ContactMe">
+            <div className="ContactMe" ref={myRef} >
                 <form className="ContactForm" ref={form} onSubmit={sendEmail}>
                     <label>Nombre*</label>
                     <input type="text" id="userName" name="user_name" placeholder="Escribe tu nombre aquí..." required/>

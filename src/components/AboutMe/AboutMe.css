@@ -20,7 +20,7 @@
 
 .TitleP{
     font-family: var(--tipo-texto);
-    font-size: 3.75rem;
+    font-size: 4.375rem;
     color: #487AAB;
     margin-bottom: 2rem;
 }
@@ -34,7 +34,7 @@
 .Info p{
     font-family: var(--tipo-texto);
     color: #487AAB;
-    font-size: 1.4rem;
+    font-size: 1.563rem;
     margin-bottom: 3rem;
     line-height: 1.7rem;
 }

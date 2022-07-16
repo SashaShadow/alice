@@ -8,7 +8,7 @@ const Projects = ({ref3}) => {
             <div className='Packaging'>
                 <img className='ProjectImg' src='https://res.cloudinary.com/telayna-i/image/upload/v1657911366/Alice/image_67_l3dqpp.png'/>
                 <div className='TextProject'>
-                    <h4>PACKAGING</h4>
+                    <h4>Packaging</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
                     <button>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>

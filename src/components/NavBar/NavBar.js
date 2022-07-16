@@ -14,7 +14,7 @@ const NavBar = ({scroll, ref1, ref2, ref3}) => {
 
     return(
         <header>
-            <nav ref={navRef}>
+            <nav ref={navRef} className='NavBar'>
                 
                 <a href='#SobreMi' className = {"nav-link"} onClick={() => { showNavBar(); scroll(ref1) }}
                 >Sobre mi
