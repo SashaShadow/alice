@@ -16,7 +16,6 @@ const Home = ({myRef, ref2, ref3, scroll}) => {
                 </div>
                 <img src="https://res.cloudinary.com/telayna-i/image/upload/v1657906177/Alice/bro_swrxi4.svg" className="alice"/>
             </div>
-            <div className="Section">Sobre mi</div>
         </div>
     )
 }
