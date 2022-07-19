@@ -12,7 +12,7 @@ const Projects = ({ref3}) => {
             <div className='Packaging'>
                 <img className='ProjectImg' src={Frame2}/>
                 <div className='TextProject'>
-                    <h4>Packaging</h4>
+                    <h4 className='ProTitle'>Packaging</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
                     <button>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
@@ -20,7 +20,7 @@ const Projects = ({ref3}) => {
             <div className='RetoqueDigital'>
                 <img className='ProjectImg' src={Frame4} />
                 <div className='TextProject'>
-                    <h4>Retoque Digital</h4>
+                    <h4 className='ProTitle'>Retoque Digital</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
                     <button>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
@@ -31,7 +31,7 @@ const Projects = ({ref3}) => {
             <div className='Logos-Banners'>
                 <img className='ProjectImg' src={Frame1} />
                 <div className='TextProject'>
-                    <h4>Logos/Banners</h4>
+                    <h4 className='ProTitle'>Logos/Banners</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
                     <button>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
@@ -39,7 +39,7 @@ const Projects = ({ref3}) => {
             <div className='Ux-Ui'>
                 <img className='ProjectImg' src={Frame3}/>
                 <div className='TextProject'>
-                    <h4>Merchandising</h4>
+                    <h4 className='ProTitle'>Merchandising</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
                     <button>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>

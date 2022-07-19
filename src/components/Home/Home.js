@@ -6,7 +6,7 @@ const Home = ({myRef, ref2, ref3, scroll}) => {
             <div className="Home">
                 <div className="text" ref={myRef}>
                     <h5>Te doy la bienvenida a mi web</h5>
-                    <h1>Hola, soy Alice</h1>
+                    <h1>Hola, soy <span className="aliTitle">Alice</span></h1>
                     <h2>Diseñadora Gráfica y UX/UI</h2>
                     <h4>Soy diseñadora y me especializo en temas como packaging, retoques digitales y logotipos</h4>
                     <div className="Buttons">

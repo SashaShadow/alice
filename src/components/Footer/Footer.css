@@ -4,7 +4,8 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #E5EBF9;
+    /* background-color: #E5EBF9; */
+    background-color: #0C4854;;
 }
 .InfoFooter{
     display: flex;
@@ -16,7 +17,8 @@
 
 .InfoFooter p{
     font-family: var(--tipo-titulo2);
-    color: #0A66C2;
+    /* color: #0A66C2; */
+    color: whitesmoke;
     font-size: 1rem;
 }
 
@@ -27,6 +29,10 @@
     position: relative;
     top: -1.5rem;
     cursor: pointer;
+}
+
+.Volver:hover {
+    color:aqua;
 }
 
 .Icon{

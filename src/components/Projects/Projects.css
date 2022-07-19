@@ -4,17 +4,27 @@
     scroll-margin-top: 6rem;
 }
 
+.Projects button:hover {
+    color:aqua;
+}
+
 .Packaging{
     display: flex;
     position: relative;
     top: -3rem;
     margin-bottom: 3rem;
+    color: whitesmoke;
+}
+
+.ProTitle {
+    color: #0C4854;
 }
 
 .RetoqueDigital{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 5rem;
+    color: whitesmoke;
 }
 
 .RetoqueDigital .TextProject{
@@ -25,7 +35,9 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #5E96CD;
+    /* background-color: #5E96CD; */
+    background-color: #BAE7EC;
+    background: linear-gradient(#2BA3C2, #BAE7EC, #BAE7EC,  #2BA3C2);
 }
 
 .Marcas img{
@@ -38,12 +50,14 @@
     position: relative;
     top: -3rem;
     margin-bottom: 3rem;
+    color: whitesmoke;
 }
 
 .Ux-Ui{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 3rem;
+    color: whitesmoke;
 }
 
 .Ux-Ui .TextProject{
@@ -64,7 +78,7 @@
 .TextProject h4{
     font-size: 2.9rem;
     font-weight: 500;
-    color: #0A66C2;
+    /* color: #0A66C2; */
     font-family: var(--tipo-titulo2);
     margin-bottom: 2rem;
 }
@@ -72,7 +86,7 @@
 .TextProject p{
     font-family: var(--tipo-texto);
     font-weight: 400;
-    color: #2A71B8;
+    /* color: #2A71B8; */
     font-size: 1.563rem;
     width: 80%;
     line-height: 1.7rem;
@@ -82,7 +96,7 @@
 .TextProject button{
     font-size: 1.875rem;
     font-family: var(--tipo-titulo2);
-    color: #0A66C2;
+    /* color: #0A66C2; */
     font-weight: 500;
     cursor: pointer;
 }

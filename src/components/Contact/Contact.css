@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E5EBF9;
+    /* background-color: #E5EBF9; */
+    background-color:#0C4854;
     height: 100vh;
+    background: linear-gradient(#2BA3C2, #0C4854);
 }
 
 .ContactText{
@@ -17,7 +19,8 @@
     font-family: var(--tipo-titulo2);
     font-size: 4.375rem;
     font-weight: 400;
-    color: #0A66C2;
+    /* color: #0A66C2; */
+    color: #EDF6F7;
     margin-bottom: 3rem;
 }
 
@@ -25,7 +28,8 @@
     font-family: var(--tipo-titulo3);
     font-size: 1.563rem;
     line-height: 1.9rem;
-    color: #0A66C2;
+    /* color: #0A66C2; */
+    color: #EDF6F7;
 }
 
 .ContactMe{
@@ -40,7 +44,8 @@
 .ContactForm label{
     font-family: var(--tipo-titulo2);
     font-size: 1.2rem;
-    color: #0A66C2;
+    /* color: #0A66C2; */
+    color: #EDF6F7;
 }
 
 .ContactForm input{
@@ -60,7 +65,8 @@
 ::placeholder {
     font-size: .875rem;
     font-family: var(--tipo-titulo2);
-    color: #1e76ce;
+    /* color: #1e76ce; */
+    color:#0C4854;
 }
 
 .ContactForm button{

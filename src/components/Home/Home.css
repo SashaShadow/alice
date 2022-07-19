@@ -1,6 +1,8 @@
 .HomeContainer{
     display: flex;
     flex-direction: column;
+    background-color: #2BA3C2;
+    color: #BAE7EC
 }
 
 .Home{
@@ -12,7 +14,7 @@
 .text h5{
     font-size: 1.25rem;
     font-family: var(--tipo-texto);
-    color: #0A66C2 ;
+    /* color: #0A66C2 ; */
     margin-bottom: 2rem ;
 }
 
@@ -20,7 +22,7 @@
     font-size: 3.75rem;
     font-family: var(--tipo-titulo1);
     font-weight: 800;
-    color: #0A66C2;
+    /* color: #0A66C2; */
     margin-bottom: 3rem;
 }
 
@@ -28,13 +30,13 @@
     font-size: 3.125rem;
     font-family: var(--tipo-titulo1);
     font-weight: 700;
-    color: #0A66C2;
+    /* color: #0A66C2; */
     margin-bottom: 2rem;
 }
 
 .text h4{
     font-family: var(--tipo-texto);
-    color: #0A66C2;
+    /* color: #0A66C2; */
     font-size: 1.563rem;
     max-width: 42rem;
     line-height: 1.8rem;
@@ -45,12 +47,17 @@
     width: 36rem;
 }
 
+.aliTitle:hover {
+    color:rgb(22, 1, 207);
+}
+
 .Buttons{
     display: flex;
 }
 
 .Buttons button{
-    background-color: #0A66C2;
+    /* background-color: #0A66C2; */
+    background-color: #0C4854;
     font-family: var(--tipo-texto);
     font-weight: 500;
     margin-right: 3rem;
@@ -60,14 +67,6 @@
     color: #f0f0f0;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 .text {
     animation-name: aparecer;

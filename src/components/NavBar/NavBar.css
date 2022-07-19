@@ -9,8 +9,8 @@ header{
     height: 6rem;
     text-align: center;
     padding: 0 2rem;
-    background-color:#97BADD ;
-    /* box-shadow: 0 1px 5px #122; */
+    /* background-color:#97BADD ; */
+    background-color:#0C4854;
     z-index: 1000;
 }
 
@@ -31,7 +31,8 @@ nav .nav-link{
     border-radius: 5px;
     font-size: 1rem;
     text-decoration: none;
-    color: #0A66C2;
+    /* color: #0A66C2; */
+    color: #EDF6F7;
     font-weight: bold;
     cursor: pointer;
 }
