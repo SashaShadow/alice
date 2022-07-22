@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     /* background-color: #E5EBF9; */
-    background-color: #0C4854;;
+    background-color: #0C4854;
+    /* margin-top: 3rem; */
 }
 .InfoFooter{
     display: flex;

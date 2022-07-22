@@ -45,6 +45,7 @@
 
 .alice{
     width: 36rem;
+    transition: 0.3s;
 }
 
 .aliTitle:hover {
@@ -83,5 +84,58 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .alice{
+        width: 30rem;
+        min-width: 25rem;
+    }
+
+    .text h2{
+        line-height: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .alice{
+        display: none;
+    }
+
+    .text h1{
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .text h1{
+        font-size: 3.125rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .text h2{
+        font-size: 2.325rem;
+    }
+
+    .text h4{
+        font-size: 1.3rem;
+    }
+
+    .Buttons button{
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 386px){
+    .Buttons button{
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .Buttons button{
+        padding: 0.5rem 0.3rem;
     }
 }

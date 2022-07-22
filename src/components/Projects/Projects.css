@@ -41,7 +41,7 @@
 }
 
 .Marcas img{
-    width: 57.5rem;
+    width: 100%;
     margin: 10rem;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .ProjectImg{
-    width: 50%;
+    width: 40%;
     margin-right: 3rem ;
     margin-left: 5rem;
 }
@@ -104,4 +104,135 @@
 .Arrow{
     position: relative;
     top: 6px;
+}
+
+@media only screen and (max-width: 1024px){
+    .ProjectImg{
+        width: 45%;
+    }
+    .Packaging{
+        position: inherit;
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .Logos-Banners{
+        position: inherit;
+        margin-bottom: 6rem;
+    }
+
+    .RetoqueDigital .TextProject h4{
+        line-height: 3rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .Packaging img{
+        margin-left: 2rem;
+    }
+
+    .Packaging p{
+        width: 100%;
+    }
+
+    .TextProject p{
+        font-size: 1.2rem;
+    }
+    
+    .TextProject button{
+        font-size: 1.4rem;
+    }
+    .TextProject h4{
+        font-size: 2.5rem;
+    }
+
+
+    .RetoqueDigital img{
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+
+    .RetoqueDigital .TextProject{
+        margin-left: 2rem;
+    }
+
+    .RetoqueDigital p{
+        width: 100%;
+    }
+    
+    .Logos-Banners img{
+        object-fit: scale-down;
+        margin-left: 1rem;
+    }
+    
+    .Ux-Ui img{
+        object-fit: scale-down;
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+    .Ux-Ui p{
+        width: 100%;
+    }
+
+    .Marcas img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .Projects{
+        margin: auto;
+    }
+    .Packaging{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TextProject{
+        align-self: center;
+        width: 80%;
+    }
+
+    .Projects h4{
+        margin-top: 2rem;
+    }
+    .Projects img{
+        width: 80%;
+    }
+
+    .RetoqueDigital{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Logos-Banners{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Logos-Banners h4{
+        font-size: 2.3rem;
+    }
+    .Logos-Banners img{
+        margin: 0;
+        margin-left: 0;
+    }
+    .Ux-Ui{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Ux-Ui .TextProject{
+        margin-left: 0rem;
+    }
+
+    .Ux-Ui h4{
+        font-size: 2.3rem ;
+    }
+
+    .Marcas img{
+        width: 100%;
+    }
 }
