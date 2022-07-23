@@ -33,6 +33,11 @@
     object-fit: contain;
 }
 
+img {
+    max-width: none; 
+    max-height: none;
+}
+
 
 
 @media only screen and (max-width: 880px) {

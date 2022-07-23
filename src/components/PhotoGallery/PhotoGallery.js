@@ -1,20 +1,6 @@
 import ResponsiveGallery from 'react-responsive-gallery';
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import './PhotoGallery.css';
-
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
-
 
 const PhotoGallery = ({category, setCategory}) => {
 
@@ -41,9 +27,8 @@ const PhotoGallery = ({category, setCategory}) => {
         })
         },[category])
 
-        // console.log(myPhotos);
     return (
-        <ResponsiveGallery useLightBox images={myPhotos}/>
+        <ResponsiveGallery images={myPhotos}/>
         // <div className="Photos">
         //     {myPhotos.map(elem => {
         //         return (
