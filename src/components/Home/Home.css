@@ -110,6 +110,16 @@
 }
 
 @media only screen and (max-width: 414px){
+
+    .text {
+        text-align: center;
+    }
+
+    .Buttons {
+        justify-content: center;
+        align-items: center;
+    }
+    
     .text h1{
         font-size: 3.125rem;
         margin-bottom: 1.5rem;
