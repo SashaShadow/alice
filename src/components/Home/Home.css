@@ -62,7 +62,7 @@
     font-family: var(--tipo-texto);
     font-weight: 500;
     margin-right: 3rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2rem; 
     border-radius: 10px;
     border: 3px solid #0E355B;
     color: #f0f0f0;
@@ -113,12 +113,17 @@
 
     .text {
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .Buttons {
         justify-content: center;
         align-items: center;
-        text-align: center;
+    }
+
+    .Buttons button {
+        margin: 0 1rem 0 1rem;
     }
 
     .text h1{
