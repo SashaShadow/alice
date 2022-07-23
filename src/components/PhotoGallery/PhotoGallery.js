@@ -1,9 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
 import './PhotoGallery.css';
 
 
@@ -34,7 +30,7 @@ const PhotoGallery = ({category, setCategory}) => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:8080/api/photos`)
+        fetch(`http://alicemichanapi.herokuapp.com/api/photos`)
         .then(response => response.json())
         .then(data => {
             if (category !== 'all') {
