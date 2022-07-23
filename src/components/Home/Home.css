@@ -118,12 +118,9 @@
     .Buttons {
         justify-content: center;
         align-items: center;
-    }
-
-    .button {
         text-align: center;
     }
-    
+
     .text h1{
         font-size: 3.125rem;
         margin-bottom: 1.5rem;
