@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import ResponsiveGallery from 'react-responsive-gallery';
 import { useState, useEffect, useCallback } from "react";
 import './PhotoGallery.css';
 
@@ -24,24 +24,34 @@ const PhotoGallery = ({category, setCategory}) => {
         fetch(`https://alicemichanapi.herokuapp.com/api/photos`)
         .then(response => response.json())
         .then(data => {
+            const images = data.fotos.map(elem => {
+                return {
+                    src: elem.url,
+                    category: elem.category,
+                    alt: elem.desc,
+                    id: elem._id
+                }
+            })
             if (category !== 'all') {
-                const newPhotos = data.fotos.filter(elem => elem.category === category)
+                const newPhotos = images.filter(elem => elem.category === category)
                 setPhotos(newPhotos)
             } else {
-                setPhotos(data.fotos)
+                setPhotos(images)
             }
         })
         },[category])
 
+        // console.log(myPhotos);
     return (
-        <div className="Photos">
-            {myPhotos.map(elem => {
-                return (
-                <div className="Photo">
-                    <img className="fotito" src={elem.url} key={elem._id} alt={elem.desc}/>
-                </div> )
-            })}
-        </div>
+        <ResponsiveGallery useLightBox images={myPhotos}/>
+        // <div className="Photos">
+        //     {myPhotos.map(elem => {
+        //         return (
+        //         <div className="Photo">
+        //             <img className="fotito" src={elem.url} key={elem._id} alt={elem.desc}/>
+        //         </div> )
+        //     })}
+        // </div>
     )
 }
 
