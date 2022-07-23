@@ -19,15 +19,6 @@ const style = {
 const PhotoGallery = ({category, setCategory}) => {
 
     const [myPhotos, setPhotos] = useState([]);
-    const [open, setOpen] = useState(false);
-    const handleOpen = (event) => {
-        console.log(event.target)
-        setOpen(true);
-    }
-    const handleClose = (event) => {
-        event.stopPropagation()
-        setOpen(false);
-    }
 
     useEffect(() => {
         fetch(`https://alicemichanapi.herokuapp.com/api/photos`)
@@ -46,25 +37,9 @@ const PhotoGallery = ({category, setCategory}) => {
         <div className="Photos">
             {myPhotos.map(elem => {
                 return (
-                <div className="Photo" key={elem._id}>
-                    <img className="fotito" src={elem.url} key={elem._id} alt={elem.desc} onClick={handleOpen}/>
-                    <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description">
-                        <Box sx={style}>
-                        <img src={elem.url} alt={elem.desc}/>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                           {elem.desc}
-                        </Typography>
-                        </Box>
-                    </Modal>
+                <div className="Photo">
+                    <img className="fotito" src={elem.url} key={elem._id} alt={elem.desc}/>
                 </div> )
-                
-                // <div className="Photo">
-                //     <img className="fotito" src={elem.url} key={elem._id} alt={elem.desc}/>
-                // </div> 
             })}
         </div>
     )
