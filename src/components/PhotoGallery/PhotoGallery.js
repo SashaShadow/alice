@@ -30,7 +30,7 @@ const PhotoGallery = ({category, setCategory}) => {
     }
 
     useEffect(() => {
-        fetch(`http://alicemichanapi.herokuapp.com/api/photos`)
+        fetch(`https://alicemichanapi.herokuapp.com/api/photos`)
         .then(response => response.json())
         .then(data => {
             if (category !== 'all') {
