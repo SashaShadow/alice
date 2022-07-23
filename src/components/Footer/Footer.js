@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 
 const Footer = ({scroll, ref1}) => {
 

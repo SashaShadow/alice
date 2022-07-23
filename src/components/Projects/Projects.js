@@ -6,7 +6,8 @@ import Frame2 from '../../images/Frame 2.png'
 import Frame3 from '../../images/Frame 3.png'
 import Frame4 from '../../images/Frame 4.png'
 
-const Projects = ({ref3}) => {
+const Projects = ({ref3, setCategory}) => {
+
     return (
         <div className='Projects' ref={ref3}>
             <div className='Packaging'>
@@ -14,7 +15,7 @@ const Projects = ({ref3}) => {
                 <div className='TextProject'>
                     <h4 className='ProTitle'>Packaging</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
-                    <button>Descubre más <BsArrowRight className='Arrow'/> </button>
+                    <button onClick={() => setCategory('packaging')}>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
             </div>
             <div className='RetoqueDigital'>
@@ -22,7 +23,7 @@ const Projects = ({ref3}) => {
                 <div className='TextProject'>
                     <h4 className='ProTitle'>Retoque Digital</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
-                    <button>Descubre más <BsArrowRight className='Arrow'/> </button>
+                    <button onClick={() => setCategory('retoquedigital')}>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
             </div>
             <div className='Marcas'>
@@ -33,7 +34,7 @@ const Projects = ({ref3}) => {
                 <div className='TextProject'>
                     <h4 className='ProTitle'>Logos/Banners</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
-                    <button>Descubre más <BsArrowRight className='Arrow'/> </button>
+                    <button onClick={() => setCategory('logos')}>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
             </div>
             <div className='Ux-Ui'>
@@ -41,7 +42,7 @@ const Projects = ({ref3}) => {
                 <div className='TextProject'>
                     <h4 className='ProTitle'>Merchandising</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae, urna sed libero ut quisque. Tristique quis et mollis porttitor diam ut iaculis vulputate. Sociis odio vestibulum elit quis et cum ullamcorper semper. Dictum sed pretium nec amet iaculis.</p>
-                    <button>Descubre más <BsArrowRight className='Arrow'/> </button>
+                    <button onClick={() => setCategory('merchandising')}>Descubre más <BsArrowRight className='Arrow'/> </button>
                 </div>
             </div>
         </div>

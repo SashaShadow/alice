@@ -16,6 +16,7 @@ const NavBar = ({scroll, ref1, ref2, ref3}) => {
         <header>
             <nav ref={navRef} className='NavBar'>
                 
+                <a className='nav-link' href='/'>Home</a>
                 <a href='#SobreMi' className = {"nav-link"} onClick={() => { showNavBar(); scroll(ref1) }}
                 >Sobre mi
                 </a>
