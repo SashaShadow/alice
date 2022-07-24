@@ -1,8 +1,9 @@
 import ResponsiveGallery from 'react-responsive-gallery';
 import { useState, useEffect } from "react";
+import Loader from './Loader';
 import './PhotoGallery.css';
 
-const PhotoGallery = ({category, setCategory}) => {
+const PhotoGallery = ({category, setLoader, loader}) => {
 
     const [myPhotos, setPhotos] = useState([]);
 
@@ -24,19 +25,14 @@ const PhotoGallery = ({category, setCategory}) => {
             } else {
                 setPhotos(images)
             }
-        })
+        }).then(_ => setLoader(false))
         },[category])
 
     return (
-        <ResponsiveGallery images={myPhotos}/>
-        // <div className="Photos">
-        //     {myPhotos.map(elem => {
-        //         return (
-        //         <div className="Photo">
-        //             <img className="fotito" src={elem.url} key={elem._id} alt={elem.desc}/>
-        //         </div> )
-        //     })}
-        // </div>
+        <>
+         {loader ? <div className='Loading'><Loader/></div> : <ResponsiveGallery images={myPhotos}/>}
+        </>
+       
     )
 }
 

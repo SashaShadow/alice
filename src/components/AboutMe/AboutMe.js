@@ -1,9 +1,9 @@
 import "./AboutMe.css";
 
-const AboutMe = () => {
+const AboutMe = ({myRef}) => {
 
     return (
-        <div className="SobreMi">
+        <div className="SobreMi" ref={myRef}>
             <div className="Info">
                 <h2 className="TitleP">Alice Michan,</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet urna in neque consequat euismod fringilla vel nunc. Aliquam molestie a ex sit amet venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc.</p>

@@ -3,7 +3,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { useRef } from 'react';
 import { FaBars } from "react-icons/fa";
 
-const PhotoNav = ({setCategory}) => {
+const PhotoNav = ({setCategory, setLoader}) => {
 
     const navRef = useRef();
 
@@ -17,23 +17,23 @@ const PhotoNav = ({setCategory}) => {
                 
                 <a className='nav-link' href='/'>Home</a>
 
-                <a href='#all' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('all')}}
+                <a href='#all' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('all'); setLoader(true);}}
                 >Todo
                 </a>
 
-                <a href='#packaging' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('packaging')}}
+                <a href='#packaging' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('packaging'); setLoader(true);}}
                 >Packaging
                 </a>
                 
-                <a href='#merchandising' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('merchandising')}}
+                <a href='#merchandising' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('merchandising'); setLoader(true);}}
                 >Merchandising
                 </a>
                 
-                <a href='#logos' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('logos')}}
+                <a href='#logos' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('logos'); setLoader(true);}}
                 >Logos
                 </a>
 
-                <a href='#retoqueDig' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('retoque digital')}}
+                <a href='#retoqueDig' className = {"nav-link"} onClick={() => { showNavBar(); setCategory('retoque digital'); setLoader(true);}}
                 >Retoque digital
                 </a>
                 
