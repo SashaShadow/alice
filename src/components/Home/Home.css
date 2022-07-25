@@ -8,6 +8,7 @@
 .Home{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -72,7 +73,7 @@
 .text {
     animation-name: aparecer;
     animation-duration: 1.5s;
-    scroll-margin-top: 23vh;
+    scroll-margin-top: 13rem;
 }
 
 @keyframes aparecer {

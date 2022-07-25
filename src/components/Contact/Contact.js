@@ -29,13 +29,26 @@ const Contact = ({myRef}) => {
         window.open('https://api.whatsapp.com/send?phone=++525536777280&text=%C2%A1Hola%20Alice,%20me%20interesa%20contratar%20tu%20trabajo!', '_blank')
     }
 
+    const facebookLink = () => {
+        window.open('https://www.facebook.com/alice.ha.927', '_blank')
+    }
+
+    const linkedinLink = () => {
+        window.open('https://www.linkedin.com/in/alice-michan-4ba36098', '_blank')
+    }
+
+    const instagramLink = () => {
+        window.open('https://instagram.com/alicemh2?igshid=YmMyMTA2M2Y=', '_blank')
+    }
+
     return (
         <div className="Contact">
             <div className="ContactText">
                 <h2>Conversemos</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, lectus augue lorem turpis. Commodo diam netus integer sed. Ut varius natoque scelerisque lectus amet platea ultricies. Mollis varius sed arcu commodo vitae et, leo.</h4>
+                <h4>Si tienes alguna consulta o deseas contratar mi trabajo puedes dejarme un mensaje en el formulario aqui presente.</h4>
+                <h4>Tambien te responderé mediante mis redes sociales.</h4>
                 <div className="IconsFooter">
-                <BsLinkedin className="Icon"/> <BsFacebook className="Icon"/> <BsInstagram className="Icon"/> 
+                <BsLinkedin onClick={linkedinLink} className="Icon"/> <BsFacebook onClick={facebookLink} className="Icon"/> <BsInstagram onClick={instagramLink} className="Icon"/> 
                 <BsWhatsapp onClick={whatsappLink} className="Icon"/>
                 </div>
             </div>
@@ -50,7 +63,7 @@ const Contact = ({myRef}) => {
                     <label>Mensaje*</label>
                     <textarea name="message" id="message"
                     rows={8}
-                    placeholder="Cuéntanos lo que necesitas..." required/>
+                    placeholder="Cuéntame lo que necesitas..." required/>
                     <button type="submit">Enviar</button>
                 </form>
             </div>

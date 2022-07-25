@@ -8,9 +8,11 @@
     background-color: #0C4854;
     /* margin-top: 3rem; */
 }
+
 .InfoFooter{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
@@ -18,7 +20,6 @@
 
 .InfoFooter p{
     font-family: var(--tipo-titulo2);
-    /* color: #0A66C2; */
     color: whitesmoke;
     font-size: 1rem;
 }
@@ -44,4 +45,9 @@
     color: #E5EBF9;
     border-radius: 50%;
     cursor: pointer;
+}
+
+#credits {
+    margin-top: 0.5rem;
+    color: #136b7d;
 }

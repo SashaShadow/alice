@@ -7,10 +7,11 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
 import PhotoNav from './components/PhotoNav/PhotoNav';
-import {useState, useRef, useEffect} from 'react';
+import {useState, useRef} from 'react';
 
 function App() {
 
+  const homeRef = useRef(null);
   const testRef = useRef(null);
   const testRef2 = useRef(null);
   const testRef3 = useRef(null);
@@ -32,11 +33,11 @@ function App() {
         :
         <>
         <NavBar scroll={scrollToElement} ref1={testRef} ref2={testRef2} ref3={testRef3}/>
-        <Home scroll={scrollToElement} ref2={testRef2} ref3={testRef3}/>
+        <Home scroll={scrollToElement} homeRef={homeRef} ref2={testRef2} ref3={testRef3}/>
         <AboutMe myRef={testRef}/>
         <Projects ref3={testRef3} setCategory={setCategory} setLoader={setLoader}/>
         <Contact myRef={testRef2}/>
-        <Footer scroll={scrollToElement} ref1={testRef}/>
+        <Footer scroll={scrollToElement} homeRef={homeRef}/>
         </>}
       </div>
   );

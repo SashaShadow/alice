@@ -1,12 +1,13 @@
 import "./Footer.css";
 
-const Footer = ({scroll, ref1}) => {
+const Footer = ({scroll, homeRef}) => {
 
     return (
         <div className="Footer">
-            <a className="Volver" onClick={() => scroll(ref1)}><p>Volver arriba</p></a>
+            <a href='#volver' className="Volver" onClick={() => scroll(homeRef)}><p>Volver arriba</p></a>
             <div className="InfoFooter">
                 <p>© Copyright Alice Michan 2022.</p>
+                <p id="credits">Designed by Alejandro Anderson. Developed by: Iñaki Telayna & Sasha Rodriguez Carlomagno</p>
             </div>
         </div>
     )

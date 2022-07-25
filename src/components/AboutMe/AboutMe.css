@@ -9,6 +9,9 @@
     scroll-margin-top: 6rem;
 }
 
+.boldP {
+    font-weight: bolder;
+}
 
 .Info{
     display: flex;
@@ -39,8 +42,6 @@
     margin-bottom: 3rem;
     line-height: 1.7rem;
 }
-
-
 
 .SobreMi img{
     margin: auto;
