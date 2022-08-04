@@ -41,11 +41,6 @@
     background: linear-gradient(#2BA3C2, #BAE7EC, #BAE7EC,  #2BA3C2);
 }
 
-.Marcas img{
-    width: 100%;
-    margin: 10rem;
-}
-
 .Logos-Banners{
     display: flex;
     position: relative;
@@ -71,7 +66,8 @@
 }
 
 .ProjectImg{
-    width: 40%;
+    width: 17rem;
+    height: 40%;
     margin-right: 3rem ;
     margin-left: 5rem;
 }
@@ -110,6 +106,7 @@
 @media only screen and (max-width: 1024px){
     .ProjectImg{
         width: 45%;
+        height: 40%;
     }
     .Packaging{
         position: inherit;
@@ -149,7 +146,6 @@
         font-size: 2.5rem;
     }
 
-
     .RetoqueDigital img{
         margin-right: 1rem;
         margin-left: 2rem;
@@ -174,10 +170,6 @@
         margin-left: 2rem;
     }
     .Ux-Ui p{
-        width: 100%;
-    }
-
-    .Marcas img{
         width: 100%;
     }
 }

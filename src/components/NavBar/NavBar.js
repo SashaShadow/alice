@@ -1,4 +1,3 @@
-import { a } from 'react-router-dom'
 import './NavBar.css'
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
